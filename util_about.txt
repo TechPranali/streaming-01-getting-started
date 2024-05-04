@@ -1,0 +1,27 @@
+
+======================================================================
+======================================================================
+ Welcome to the NW Python Debugging Information Utility!
+ Date and Time: 2024-04-30 at 11:58 PM
+ Operating System: nt Windows 11
+ System Architecture: 64bit
+ Number of CPUs: 8
+ Machine Type: AMD64
+ Python Version: 3.12.1
+ Python Build Date and Compiler: tags/v3.12.1:2305ca5 with Dec  7 2023 22:03:25
+ Python Implementation: CPython
+ Active pip environment:   None
+ Active conda environment: None
+ Path to Interpreter:         C:\Users\Pranali\AppData\Local\Programs\Python\Python312\python.exe
+ Path to virtual environment: C:\Users\Pranali\AppData\Local\Programs\Python\Python312
+ Current Working Directory:   C:\VScode2024\streaming-01-getting-started
+ Path to source directory:    C:\VScode2024\streaming-01-getting-started
+ Path to script file:         C:\VScode2024\streaming-01-getting-started\util_about.py
+ User's Home Directory:       C:\Users\Pranali
+ Terminal Environment:        VS Code
+ Terminal Type:               cmd.exe
+ Preferred command:           python
+ Is python available in PATH:   True
+ Is git available in PATH:      True 
+======================================================================
+======================================================================

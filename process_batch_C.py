@@ -34,11 +34,31 @@ OUTPUT_FILE_NAME = "batchfile_3_farenheit.csv"
 
 
 def convert_k_to_f(temp_k):
-    return
+    """Convert Kelvin to Fahrenheit."""
+    logging.debug(f"Calling convert_k_to_f() with {temp_k}.")
+    fahrenheit = round((float(temp_k) - 273.15) * 9 / 5 + 32, 2)
+    logging.debug(f"Converted {temp_k}K to {fahrenheit}F.")
+    return fahrenheit
 
 
 def process_rows(input_file_name, output_file_name):
-    return
+    """Read from input file, convert temperature, and write to output file."""
+    logging.info(f"Starting conversion from {input_file_name} to {output_file_name}.")
+    with open(input_file_name, "r") as input_file:
+        reader = csv.reader(input_file, delimiter=",")
+        header = next(reader)  # Skip the header
+        logging.info(f"Header read and skipped: {header}")
+
+        with open(output_file_name, "w", newline="") as output_file:
+            writer = csv.writer(output_file, delimiter=",")
+            writer.writerow(["Year", "Month", "Day", "Time", "TempF"])  # Write the output header
+
+            for row in reader:
+                Year, Month, Day, Time, TempK = row
+                TempF = convert_k_to_f(TempK)
+                writer.writerow([Year, Month, Day, Time, TempF])
+                logging.debug(f"Processed row from {TempK}K to {TempF}F")
+    logging.info("Conversion process completed successfully.")
 
 
 # ---------------------------------------------------------------------------
